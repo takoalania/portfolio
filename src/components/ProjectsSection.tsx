@@ -12,7 +12,7 @@ const personalProjects = [
       'A simple and responsive Kanban board with drag-and-drop functionality to manage tasks efficiently.',
     image: '/projects/kanban.png',
     tech: ['React', 'TypeScript', 'Tailwind CSS'],
-    liveUrl: 'https://kanban-app-lake-two.vercel.app',
+    liveUrl: '/projects/kanban',
     codeUrl: 'https://github.com/takoalania/Kanban-App'
   },
   {
@@ -21,7 +21,7 @@ const personalProjects = [
       'A Giphy API-integrated app to search and explore trending GIFs. Features responsive grid layout and search UI.',
     image: '/projects/gif.png',
     tech: ['React', 'TypeScript', 'REST API'],
-    liveUrl: 'https://gif-explorer-theta.vercel.app',
+    liveUrl: '/projects/gif-explorer',
     codeUrl: 'https://github.com/takoalania/gif-explorer'
   },
   {
@@ -30,7 +30,7 @@ const personalProjects = [
       'AI-powered app that suggests outfit ideas using OpenAI and external image sources. Supports mobile and web.',
     image: '/projects/outfit.png',
     tech: ['React Native', 'Tailwind CSS', 'OpenAI API'],
-    liveUrl: 'https://outfit-inspiration.vercel.app',
+    liveUrl: '/projects/outfit-inspiration',
     codeUrl: 'https://github.com/takoalania/outfit-inspiration'
   },
   {
@@ -39,7 +39,7 @@ const personalProjects = [
       'A clean, minimalistic app for tracking daily habits and streaks, with local state and calendar view.',
     image: '/projects/habit.png',
     tech: ['React', 'TypeScript', 'Tailwind CSS'],
-    liveUrl: 'https://habit-tracker-wheat-one.vercel.app',
+    liveUrl: '/projects/habit-tracker',
     codeUrl: 'https://github.com/takoalania/habit-tracker'
   },
   {
@@ -48,7 +48,7 @@ const personalProjects = [
       'A collapsible, dynamic editor for building nested reports with computed totals and structured sections.',
     image: '/projects/report.png',
     tech: ['React', 'TypeScript', 'Styled Components'],
-    liveUrl: 'https://report-structure-app.vercel.app',
+    liveUrl: '/projects/report-structure-app',
     codeUrl: 'https://github.com/takoalania/report-structure-app'
   }
 ];
