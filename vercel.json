@@ -19,10 +19,6 @@
     {
       "source": "/projects/report-structure-app/:match*",
       "destination": "https://report-structure-app.vercel.app/:match*"
-    },
-    {
-      "source": "/:match*",
-      "destination": "https://your-main-portfolio.vercel.app/:match*"
     }
   ]
 }
