@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import { usePrefersReducedMotion } from '../helpers/hooks';
 
 type Experience = {
   company: string;
@@ -110,6 +111,7 @@ const experiences: Experience[] = [
 ];
 
 export default function ExperienceSection() {
+  const prefersReducedMotion = usePrefersReducedMotion();
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
@@ -118,6 +120,7 @@ export default function ExperienceSection() {
 
       {experiences.map((exp, i) => {
         const isOpen = openIndex === i;
+
         return (
           <div key={i} className="mb-4 border border-gray-700 rounded-lg overflow-hidden">
             <button
@@ -132,13 +135,7 @@ export default function ExperienceSection() {
 
             <AnimatePresence initial={false}>
               {isOpen && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: 'auto', opacity: 1 }}
-                  exit={{ height: 0, opacity: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="overflow-hidden will-change-transform"
-                >
+                prefersReducedMotion ? (
                   <div className="p-6 bg-[#161b22] space-y-4">
                     <div className="flex items-center gap-4">
                       {exp.logo && (
@@ -170,7 +167,47 @@ export default function ExperienceSection() {
                       ))}
                     </div>
                   </div>
-                </motion.div>
+                ) : (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: 'auto', opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="will-change-transform"
+                  >
+                    <div className="p-6 bg-[#161b22] space-y-4 overflow-hidden">
+                      <div className="flex items-center gap-4">
+                        {exp.logo && (
+                          <Image src={exp.logo} alt={exp.company} width={40} height={40} />
+                        )}
+                        <div>
+                          <div className="text-sm text-gray-400">{exp.location}</div>
+                          {exp.website && (
+                            <a
+                              href={exp.website}
+                              target="_blank"
+                              className="text-sm text-blue-400 underline"
+                            >
+                              {exp.company === 'Freelance (Upwork)' ? 'upwork.com' : exp.website.replace('https://', '')}
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                      <ul className="list-disc list-inside text-gray-300 space-y-1">
+                        {exp.description.map((item, idx) => (
+                          <li key={idx}>{item}</li>
+                        ))}
+                      </ul>
+                      <div className="flex flex-wrap gap-2 pt-2">
+                        {exp.tech.map((tech, idx) => (
+                          <span key={idx} className="bg-gray-700 text-sm px-3 py-1 rounded-full">
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </motion.div>
+                )
               )}
             </AnimatePresence>
           </div>

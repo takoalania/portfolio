@@ -20,7 +20,7 @@ export default function SkillsSection() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Frontend */}
         <motion.div
-          className="bg-[#161b22] p-6 rounded-lg shadow-lg will-change-transform"
+          className="bg-[#161b22] p-6 rounded-lg shadow-lg will-change-transform cursor-pointer"
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.3 }}
         >
@@ -37,7 +37,7 @@ export default function SkillsSection() {
 
         {/* Backend */}
         <motion.div
-          className="bg-[#161b22] p-6 rounded-lg shadow-lg will-change-transform"
+          className="bg-[#161b22] p-6 rounded-lg shadow-lg will-change-transform cursor-pointer"
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.3 }}
         >
@@ -54,7 +54,7 @@ export default function SkillsSection() {
 
         {/* Tools & Testing */}
         <motion.div
-          className="bg-[#161b22] p-6 rounded-lg shadow-lg will-change-transform"
+          className="bg-[#161b22] p-6 rounded-lg shadow-lg will-change-transform cursor-pointer"
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.3 }}
         >

@@ -3,8 +3,11 @@
 import { motion } from 'framer-motion';
 import { FaAnglesDown } from "react-icons/fa6";
 import DiagonalLinesCanvas from './DiagonalLinesCanvas';
+import { usePrefersReducedMotion } from '../helpers/hooks'
 
 export default function HeroSection() {
+  const prefersReducedMotion = usePrefersReducedMotion();
+
   const handleScroll = () => {
     const section = document.getElementById('skills');
     if (section) {
@@ -17,8 +20,8 @@ export default function HeroSection() {
       <DiagonalLinesCanvas />
 
       <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={prefersReducedMotion ? false : { opacity: 0, y: -20 }}
+        animate={prefersReducedMotion ? false : { opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="text-5xl sm:text-6xl font-extrabold mb-4 tracking-tight"
       >
@@ -26,8 +29,8 @@ export default function HeroSection() {
       </motion.h1>
 
       <motion.p
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={prefersReducedMotion ? false : { opacity: 0, y: 10 }}
+        animate={prefersReducedMotion ? false : { opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
         className="text-lg sm:text-xl max-w-2xl text-gray-300 mb-6"
       >
@@ -35,10 +38,11 @@ export default function HeroSection() {
       </motion.p>
 
       <motion.div
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={prefersReducedMotion ? false : { opacity: 0, y: 10 }}
+        animate={prefersReducedMotion ? false : { opacity: 1, y: 0 }}
+        whileInView={prefersReducedMotion ? undefined : 'show'}
         transition={{ delay: 0.5 }}
-        className="text-gray-400 cursor-pointer animate-bounce will-change-transform"
+        className={`text-gray-400 cursor-pointer ${prefersReducedMotion ? '' : 'animate-bounce'} will-change-transform`}
         onClick={handleScroll}
         aria-label="Scroll to next section"
       >
