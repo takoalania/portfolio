@@ -1,24 +1,24 @@
 {
   "rewrites": [
     {
-      "source": "/projects/kanban/:match*",
-      "destination": "https://kanban-app-lake-two.vercel.app/:match*"
+      "source": "/projects/kanban",
+      "destination": "https://kanban-app-lake-two.vercel.app"
     },
     {
-      "source": "/projects/gif-explorer/:match*",
-      "destination": "https://gif-explorer-theta.vercel.app/:match*"
+      "source": "/projects/gif-explorer",
+      "destination": "https://gif-explorer-theta.vercel.app"
     },
     {
-      "source": "/projects/outfit-inspiration/:match*",
-      "destination": "https://outfit-inspiration.vercel.app/:match*"
+      "source": "/projects/outfit-inspiration",
+      "destination": "https://outfit-inspiration.vercel.app"
     },
     {
-      "source": "/projects/habit-tracker/:match*",
-      "destination": "https://habit-tracker-wheat-one.vercel.app/:match*"
+      "source": "/projects/habit-tracker",
+      "destination": "https://habit-tracker-wheat-one.vercel.app"
     },
     {
-      "source": "/projects/report-structure-app/:match*",
-      "destination": "https://report-structure-app.vercel.app/:match*"
+      "source": "/projects/report-structure-app",
+      "destination": "https://report-structure-app.vercel.app"
     }
   ]
 }

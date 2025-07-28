@@ -38,7 +38,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5 }}
-        className="text-gray-400 cursor-pointer animate-bounce"
+        className="text-gray-400 cursor-pointer animate-bounce will-change-transform"
         onClick={handleScroll}
         aria-label="Scroll to next section"
       >

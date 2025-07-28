@@ -109,7 +109,7 @@ const fadeInUp: Variants = {
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }
+    transition: { duration: 0.3, ease: 'easeOut' }
   }
 };
 
@@ -120,7 +120,7 @@ export default function ProjectsSection() {
         className="text-3xl sm:text-4xl font-bold text-center mb-16"
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: 0.5 }}
         variants={fadeInUp}
       >
         🛠 My Work
@@ -132,10 +132,10 @@ export default function ProjectsSection() {
           {contributionProjects.map((project, index) => (
             <motion.div
               key={index}
-              className="grid md:grid-cols-2 gap-8 items-center mb-16"
+              className="grid md:grid-cols-2 gap-8 items-center mb-16 will-change-transform"
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ once: true, amount: 0.5 }}
               variants={fadeInUp}
             >
               <div className="w-full h-60 bg-gray-800 rounded-lg overflow-hidden">
@@ -145,6 +145,8 @@ export default function ProjectsSection() {
                     alt={project.title}
                     width={640}
                     height={360}
+                    loading="lazy"
+                    priority={false}
                     className="w-full h-full object-cover"
                   />
                 )}
@@ -176,7 +178,7 @@ export default function ProjectsSection() {
           {personalProjects.map((project, index) => (
             <motion.div
               key={index}
-              className="grid md:grid-cols-2 gap-8 items-center mb-16"
+              className="grid md:grid-cols-2 gap-8 items-center mb-16 will-change-transform"
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.2 }}
@@ -189,6 +191,8 @@ export default function ProjectsSection() {
                     alt={project.title}
                     width={640}
                     height={360}
+                    loading="lazy"
+                    priority={false}
                     className="w-full h-full object-cover"
                   />
                 )}
@@ -205,13 +209,14 @@ export default function ProjectsSection() {
                 </div>
                 <div className="flex gap-4">
                   {project.liveUrl && (
-                    <Link
+                    <a
                       href={project.liveUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="bg-blue-600 hover:bg-blue-700 transition px-4 py-2 rounded text-sm"
                     >
                       Visit Site
-                    </Link>
+                    </a>
                   )}
                   {project.codeUrl && (
                     <Link

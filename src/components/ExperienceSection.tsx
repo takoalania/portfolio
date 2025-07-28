@@ -137,7 +137,7 @@ export default function ExperienceSection() {
                   animate={{ height: 'auto', opacity: 1 }}
                   exit={{ height: 0, opacity: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="overflow-hidden"
+                  className="overflow-hidden will-change-transform"
                 >
                   <div className="p-6 bg-[#161b22] space-y-4">
                     <div className="flex items-center gap-4">
