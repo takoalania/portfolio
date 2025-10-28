@@ -109,6 +109,30 @@ export default function ProjectsSection() {
 
 const personalProjects = [
   {
+    title: 'Public Holidays App',
+    description: 'Displays public holidays by country and year using the OpenHolidays API. Built with React Query and styled using PaperCSS.',
+    image: '/projects/holidays.png',
+    tech: ['React', 'TypeScript', 'React Query', 'PaperCSS', 'REST API', 'Jest', 'Testing Library'],
+    liveUrl: 'https://public-holidays-app-flax.vercel.app/',
+    codeUrl: 'https://github.com/takoalania/public-holidays-app'
+  },
+  {
+    title: 'JD Research (AI Agent)',
+    description: 'An AI-powered tool to analyze job descriptions using LangChain and OpenAI. Supports fast, contextual research for job seekers and hiring teams.',
+    image: '/projects/jd-research.png',
+    tech: ['Next.js', 'TypeScript', 'OpenAI API', 'LangChain', 'Tailwind CSS', 'AI Agent'],
+    liveUrl: 'https://jd-research.vercel.app/',
+    codeUrl: 'https://github.com/takoalania/jd-research'
+  },
+  {
+    title: 'SpaceX Launch Tracker',
+    description: 'Browse and search past and upcoming SpaceX launches. Powered by GraphQL and styled with Tailwind. Includes pagination and accessibility testing.',
+    image: '/projects/spacex.png',
+    tech: ['React', 'TypeScript', 'GraphQL', 'SpaceX API', 'Tailwind CSS', 'Pagination', 'Testing Library'],
+    liveUrl: 'https://space-x-launches-g6yd.vercel.app/',
+    codeUrl: 'https://github.com/takoalania/SpaceX-launches'
+  },
+  {
     title: 'Kanban App',
     description: 'A simple and responsive Kanban board...',
     image: '/projects/kanban.png',
