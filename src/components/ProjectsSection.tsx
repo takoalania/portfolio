@@ -89,7 +89,7 @@ export default function ProjectsSection() {
         viewport={{ once: true, amount: 0.4 }}
         variants={fadeIn}
       >
-        🛠 My Work
+        My Work
       </motion.h2>
 
       <div className="max-w-5xl mx-auto space-y-20">
@@ -109,6 +109,14 @@ export default function ProjectsSection() {
 
 const personalProjects = [
   {
+    title: 'JD Research (AI Agent)',
+    description: 'An AI-powered tool to analyze job descriptions using LangChain and OpenAI. Supports fast, contextual research for job seekers and hiring teams.',
+    image: '/projects/jd.png',
+    tech: ['Next.js', 'TypeScript', 'OpenAI API', 'LangChain', 'Tailwind CSS', 'AI Agent'],
+    liveUrl: 'https://jd-research.vercel.app/',
+    codeUrl: 'https://github.com/takoalania/jd-research'
+  },
+  {
     title: 'Public Holidays App',
     description: 'Displays public holidays by country and year using the OpenHolidays API. Built with React Query and styled using PaperCSS.',
     image: '/projects/calendar.png',
@@ -117,12 +125,12 @@ const personalProjects = [
     codeUrl: 'https://github.com/takoalania/public-holidays-app'
   },
   {
-    title: 'JD Research (AI Agent)',
-    description: 'An AI-powered tool to analyze job descriptions using LangChain and OpenAI. Supports fast, contextual research for job seekers and hiring teams.',
-    image: '/projects/jd.png',
-    tech: ['Next.js', 'TypeScript', 'OpenAI API', 'LangChain', 'Tailwind CSS', 'AI Agent'],
-    liveUrl: 'https://jd-research.vercel.app/',
-    codeUrl: 'https://github.com/takoalania/jd-research'
+    title: 'Fun Translations App',
+    description: 'A playful language translator that uses the Fun Translations API. Supports Pirate, Yoda, Minion, and more. Built with React.',
+    image: '/projects/translate.png',
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Fun Translations API', 'REST'],
+    liveUrl: 'https://fun-translations-sigma.vercel.app/translate',
+    codeUrl: 'https://github.com/takoalania/fun-translations'
   },
   {
     title: 'SpaceX Launch Tracker',
@@ -163,6 +171,14 @@ const personalProjects = [
     tech: ['React', 'TypeScript', 'Styled Components'],
     liveUrl: 'https://report-structure-app.vercel.app',
     codeUrl: 'https://github.com/takoalania/report-structure-app'
+  },
+  {
+    title: 'Accordion App',
+    description: 'A minimal, accessible accordion UI component built with React and Tailwind CSS. Designed for reuse and clean animation.',
+    image: '/projects/accordion.png',
+    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Accessibility', 'Component Design'],
+    liveUrl: 'https://accordion-app-956v.vercel.app/',
+    codeUrl: 'https://github.com/takoalania/accordion-app'
   }
 ];
 
