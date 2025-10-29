@@ -118,9 +118,9 @@ const personalProjects = [
   },
   {
     title: 'Task Management System',
-    description: 'A simple and responsive Kanban board with real-time tracking',
+    description: 'A real-time Kanban board built with React and TypeScript. It lets users manage tasks by dragging cards across columns and supports inline editing, dynamic column creation, and persistent state.',
     image: '/projects/task-management.png',
-    tech: ['React', 'TypeScript'],
+    tech: ['React', 'TypeScript', 'Websockets', 'Jest', 'Testing Library'],
     liveUrl: 'https://kanban-board-xi-ivory.vercel.app',
     codeUrl: 'https://github.com/takoalania/kanban-board'
   },
