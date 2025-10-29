@@ -94,12 +94,12 @@ export default function ProjectsSection() {
 
       <div className="max-w-5xl mx-auto space-y-20">
         <div>
-          <h3 className="text-2xl font-semibold mb-10 border-b border-gray-700 pb-2">💼 Contributions</h3>
+          <h3 className="text-2xl font-semibold mb-10 border-b border-gray-700 pb-2">Contributions</h3>
           {contributionProjects.map(renderProjectCard)}
         </div>
 
         <div>
-          <h3 className="text-2xl font-semibold mb-10 border-b border-gray-700 pb-2">🧪 Personal Projects</h3>
+          <h3 className="text-2xl font-semibold mb-10 border-b border-gray-700 pb-2">Personal Projects</h3>
           {personalProjects.map(renderProjectCard)}
         </div>
       </div>
