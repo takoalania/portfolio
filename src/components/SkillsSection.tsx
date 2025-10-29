@@ -14,7 +14,7 @@ export default function SkillsSection() {
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        🧠 My Expertise
+        My Expertise
       </motion.h2>
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
