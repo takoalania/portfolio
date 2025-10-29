@@ -7,7 +7,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="relative z-10 bg-[#111827] text-white pb-20 px-6">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-8">📬 Get in Touch</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8">Get in Touch</h2>
         <p className="text-gray-300 mb-8">
           Feel free to reach out for opportunities, collaboration ideas or freelance projects.
         </p>
