@@ -141,6 +141,14 @@ const personalProjects = [
     codeUrl: 'https://github.com/takoalania/fun-translations'
   },
   {
+    title: 'Todo App with useLocalStorage',
+    description: 'A clean and responsive Todo app built with React and TypeScript. Features a reusable custom hook for localStorage persistence and full test coverage using Vitest and React Testing Library.',
+    image: '/projects/todo.png',
+    tech: ['React', 'TypeScript', 'Vite', 'Vitest', 'Testing Library', 'Custom Hook', 'localStorage'],
+    liveUrl: 'https://todo-app-eosin-eta-46.vercel.app/',
+    codeUrl: 'https://github.com/takoalania/todo-app'
+  },
+  {
     title: 'SpaceX Launch Tracker',
     description: 'Browse and search past and upcoming SpaceX launches. Powered by GraphQL and styled with Tailwind. Includes pagination and accessibility testing.',
     image: '/projects/spaceX.png',
