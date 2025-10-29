@@ -117,6 +117,14 @@ const personalProjects = [
     codeUrl: 'https://github.com/takoalania/jd-research'
   },
   {
+    title: 'Task Management System',
+    description: 'A simple and responsive Kanban board with real-time tracking',
+    image: '/projects/task-management.png',
+    tech: ['React', 'TypeScript'],
+    liveUrl: 'https://kanban-board-xi-ivory.vercel.app',
+    codeUrl: 'https://github.com/takoalania/kanban-board'
+  },
+  {
     title: 'Public Holidays App',
     description: 'Displays public holidays by country and year using the OpenHolidays API. Built with React Query and styled using PaperCSS.',
     image: '/projects/calendar.png',
@@ -139,14 +147,6 @@ const personalProjects = [
     tech: ['React', 'TypeScript', 'GraphQL', 'SpaceX API', 'Tailwind CSS', 'Pagination', 'Testing Library'],
     liveUrl: 'https://space-x-launches-g6yd.vercel.app/',
     codeUrl: 'https://github.com/takoalania/SpaceX-launches'
-  },
-  {
-    title: 'Kanban App',
-    description: 'A simple and responsive Kanban board...',
-    image: '/projects/kanban.png',
-    tech: ['React', 'TypeScript', 'Tailwind CSS'],
-    liveUrl: 'https://kanban-app-lake-two.vercel.app',
-    codeUrl: 'https://github.com/takoalania/Kanban-App'
   },
   {
     title: 'GIF Explorer',
