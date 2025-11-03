@@ -113,7 +113,7 @@ const personalProjects = [
     description: 'An AI-powered tool to analyze job descriptions using LangChain and OpenAI. Supports fast, contextual research for job seekers and hiring teams.',
     image: '/projects/jd.png',
     tech: ['Next.js', 'TypeScript', 'OpenAI API', 'LangChain', 'Tailwind CSS', 'AI Agent'],
-    liveUrl: 'https://jd-research.vercel.app/',
+    liveUrl: 'https://jd-research.vercel.app',
     codeUrl: 'https://github.com/takoalania/jd-research'
   },
   {
@@ -129,7 +129,7 @@ const personalProjects = [
     description: 'Displays public holidays by country and year using the OpenHolidays API. Built with React Query and styled using PaperCSS.',
     image: '/projects/calendar.png',
     tech: ['React', 'TypeScript', 'React Query', 'PaperCSS', 'REST API', 'Jest', 'Testing Library'],
-    liveUrl: 'https://public-holidays-app-flax.vercel.app/',
+    liveUrl: 'https://public-holidays-app-flax.vercel.app',
     codeUrl: 'https://github.com/takoalania/public-holidays-app'
   },
   {
@@ -145,8 +145,16 @@ const personalProjects = [
     description: 'A clean and responsive Todo app built with React and TypeScript. Features a reusable custom hook for localStorage persistence and full test coverage using Vitest and React Testing Library.',
     image: '/projects/todo.png',
     tech: ['React', 'TypeScript', 'Vite', 'Vitest', 'Testing Library', 'Custom Hook', 'localStorage'],
-    liveUrl: 'https://todo-app-eosin-eta-46.vercel.app/',
+    liveUrl: 'https://todo-app-eosin-eta-46.vercel.app',
     codeUrl: 'https://github.com/takoalania/todo-app'
+  },
+  {
+    title: 'Memory Game',
+    description: 'A card-matching memory game built with React and TypeScript. Features card flip animations, shuffling using Lodash, win detection, and restart functionality with a polished modal UI.',
+    image: '/projects/memory.png',
+    tech: ['React', 'TypeScript', 'Lodash', 'UUID', 'CSS Animations'],
+    liveUrl: 'https://memory-game-app-theta.vercel.app',
+    codeUrl: 'https://github.com/takoalania/memory-game-app'
   },
   {
     title: 'SpaceX Launch Tracker',
