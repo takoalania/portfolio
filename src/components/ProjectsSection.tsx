@@ -157,6 +157,14 @@ const personalProjects = [
     codeUrl: 'https://github.com/takoalania/memory-game-app'
   },
   {
+    title: 'TMDB Movie Search',
+    description: 'A React + TypeScript app to search movies using the TMDB API. Features keyword search, adult content toggle, language and region filters, and release year options. The SearchBar is stateless and fully controlled by the parent component.',
+    image: '/projects/movie.png',
+    tech: ['React', 'TypeScript', 'TMDB API', 'Vite', 'Tailwind CSS', 'React Query', 'Jest', 'React Testing Library'],
+    liveUrl: 'https://movie-search-app-mocha-mu.vercel.app',
+    codeUrl: 'https://github.com/takoalania/movie-search-app'
+  },
+  {
     title: 'SpaceX Launch Tracker',
     description: 'Browse and search past and upcoming SpaceX launches. Powered by GraphQL and styled with Tailwind. Includes pagination and accessibility testing.',
     image: '/projects/spaceX.png',
