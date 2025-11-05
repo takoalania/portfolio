@@ -9,10 +9,10 @@ import SkillsSection from '@/components/SkillsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ExperienceSection from '@/components/ExperienceSection';
 import ContactSection from '@/components/ContactSection';
-import { usePrefersReducedMotion } from 'framer-motion';
+import { useReducedMotion } from 'framer-motion';
 
 export default function HomePage() {
-  const prefersReducedMotion = usePrefersReducedMotion();
+  const prefersReducedMotion = useReducedMotion();
   
   const particlesInit = useCallback(async (engine: any) => {
     const mod = await import('@tsparticles/engine');
