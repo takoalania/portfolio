@@ -30,7 +30,7 @@ export default function HeroSection() {
 
         <div
           onClick={handleScroll}
-          className={`text-gray-400 cursor-pointer ${prefersReducedMotion ? '' : 'animate-bounce'} will-change-transform`}
+          className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 text-gray-400 cursor-pointer ${prefersReducedMotion ? '' : 'animate-bounce'} will-change-transform`}
           aria-label="Scroll to next section"
         >
           <FaAnglesDown className="text-2xl hover:text-white transition" />
