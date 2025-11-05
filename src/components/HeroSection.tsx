@@ -1,9 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { FaAnglesDown } from "react-icons/fa6";
-import DiagonalLinesCanvas from './DiagonalLinesCanvas';
-import { usePrefersReducedMotion } from '../helpers/hooks'
+import { usePrefersReducedMotion } from '../helpers/hooks';
 
 export default function HeroSection() {
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -16,38 +14,28 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative z-10 flex flex-col justify-center items-center h-screen text-center px-4">
-      <DiagonalLinesCanvas />
+    <section className="relative z-10 flex flex-col justify-center items-center h-screen text-center px-4 bg-[url('/topography.svg')] bg-center bg-cover bg-no-repeat bg-gray-900">
+      {/* Optional: add a semi-transparent overlay */}
+      <div className="absolute inset-0 bg-black/30 z-0" />
 
-      <motion.h1
-        initial={prefersReducedMotion ? false : { opacity: 0, y: -20 }}
-        animate={prefersReducedMotion ? false : { opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-5xl sm:text-6xl font-extrabold mb-4 tracking-tight"
-      >
-        Tamar Alania
-      </motion.h1>
+      {/* Content above overlay */}
+      <div className="relative z-10">
+        <h1 className="text-5xl sm:text-6xl font-extrabold mb-4 tracking-tight text-white">
+          Tamar Alania
+        </h1>
 
-      <motion.p
-        initial={prefersReducedMotion ? false : { opacity: 0, y: 10 }}
-        animate={prefersReducedMotion ? false : { opacity: 1, y: 0 }}
-        transition={{ delay: 0.3 }}
-        className="text-lg sm:text-xl max-w-2xl text-gray-300 mb-6"
-      >
-        Full‑Stack Developer focused on frontend — crafting scalable, user-centric web experiences using React, TypeScript, Node.js, and modern UI libraries.
-      </motion.p>
+        <p className="text-lg sm:text-xl max-w-2xl text-gray-300 mb-6">
+          Full‑Stack Developer focused on frontend — crafting scalable, user-centric web experiences using React, TypeScript, Node.js, and modern UI libraries.
+        </p>
 
-      <motion.div
-        initial={prefersReducedMotion ? false : { opacity: 0, y: 10 }}
-        animate={prefersReducedMotion ? false : { opacity: 1, y: 0 }}
-        whileInView={prefersReducedMotion ? undefined : 'show'}
-        transition={{ delay: 0.5 }}
-        className={`text-gray-400 cursor-pointer ${prefersReducedMotion ? '' : 'animate-bounce'} will-change-transform`}
-        onClick={handleScroll}
-        aria-label="Scroll to next section"
-      >
-        <FaAnglesDown className="text-2xl hover:text-white transition" />
-      </motion.div>
+        <div
+          onClick={handleScroll}
+          className={`text-gray-400 cursor-pointer ${prefersReducedMotion ? '' : 'animate-bounce'} will-change-transform`}
+          aria-label="Scroll to next section"
+        >
+          <FaAnglesDown className="text-2xl hover:text-white transition" />
+        </div>
+      </div>
     </section>
   );
 }
